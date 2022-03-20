@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+:root{
+    --primary-color: #efefef;
+}
+.main-container{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, .2);
+    display: flex;
+    justify-content: flex-end;
+}
+.menu-container{
+    min-width: 720px;
+    width: 55%;
+    height: 100%;
+    background-color: rgba(255, 252, 236, .95);
+    padding: 120px 118px 0 106px;
+}
+.menu-container .close{
+    width: 96px;
+    height: 96px;
+    background-color: #FFF1AF;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-container .close img{
+    width: 34px;
+    height: 34px;
+}
+.menu-container > span{
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+}
+.menu-container .inner-container{
+    max-width: 546px;
+    width: 100%;
+    height: 440px;
+    max-height: calc(100% - 40px);
+    overflow-y: auto;
+    outline: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-container .inner-container h5{
+    position: relative;
+    font-size: 22px;
+}
+.menu-container .inner-container h5::after{
+    content: '';
+    position: absolute;
+    background-color: #B38728;
+    width: 220px;
+    height: 1px;
+    left: 0;
+    top: calc(100% + 8px);
+}
+.menu-container .inner-container .right-side h5{
+    margin-bottom: 96px;
+}
+.menu-container .inner-container h6{
+    font-size: 18px;
+    margin-top: 32px;
+}
+.btns{
+    display: flex;
+    flex-direction: column;
+}
+.btns button{
+    border: none;
+    background-color: #fff;
+    border-radius: 57px;
+    width: 234px;
+    height: 64px;
+    transition: .25s ease all;
+    cursor: pointer;
+}
+.btns button:hover{
+    background-color: rgb(255, 87, 87);
+    color: #fff;
+}
+.menu-container .inner-container .right-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.btns button:last-child{
+    margin-top: 40px;
+}
