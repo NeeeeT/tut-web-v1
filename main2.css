@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+.main-container{
+    width: 100%;
+    background-color: rgb(31, 31, 31);
+    padding: 40px;
+}
+.green-bg{
+    position: relative;
+    width: 100%;
+    height: 640px;
+    margin: 0 auto;
+    background-image: url('./img/green-bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: (上下) (左右)*/
+    /* margin: 上 右 下 左*/
+    /* margin: (上下左右)*/
+}
+.green-bg > h1{
+    font-size: 64px;
+    font-weight: bold;
+    text-shadow: 16px 22px 4px rgba(0, 0, 0, 0.25);
+    color: #fff;
+}
+.green-bg > .circle{
+    border: 1px solid #DF1AFF;
+    width: 234px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+	-webkit-animation: scale-up-animation 2s linear 0.01s infinite;
+	animation: scale-up-animation 2s linear 0.01s infinite;
+}
+.section-two{
+    padding: 60px 0;
+}
+.section-two > h5{
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+.section-two > h6{
+    max-width: 640px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    margin: 48px auto 0 auto;
+}
+.box-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 744px;
+    margin: 72px auto 0 auto;
+    /* justify-content: space-evenly */
+    gap: 64px 18px;
+}
+.box-container > .box{
+    height: 76px;
+    width: 172px;
+    border: 1px solid yellow;
+    /* margin-bottom: 18px; */
+}
+@keyframes scale-up-animation {
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    100%{
+        opacity: .1;
+        transform: scale(3);
+    }
+}
